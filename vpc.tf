@@ -1,6 +1,6 @@
 module "vpc" {
     #source = "../terraform-aws-vpc"
-    source = "https://github.com/vijaya294/terraform-aws-vpc.git?ref=main"
+    source = "git::https://github.com/vijaya294/terraform-aws-vpc.git?ref=main"
     vpc_cidr = var.vpc_cidr
     project_name = var.project_name
     environment = var.environment
